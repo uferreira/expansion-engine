@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Expansion Engine is an experimental system designed to turn low-temperature thermal energy into useful power."
+    />
+    <meta name="theme-color" content="#071a2a" />
+    <title>The Expansion Engine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="The Expansion Engine, home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Expansion Engine</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#concept">Concept</a>
+        <a href="#process">How it works</a>
+        <a href="#applications">Applications</a>
+        <a href="#team">Team</a>
+        <a class="nav-cta" href="#contact">Collaborate</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Low-temperature thermal power</p>
+          <h1>Turn stored heat into <em>useful motion.</em></h1>
+          <p class="hero-intro">
+            The Expansion Engine is an experimental system designed to convert low-temperature
+            thermal energy into mechanical and electrical power.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#concept">Explore the concept</a>
+            <a class="text-link" href="#team">Meet the people <span aria-hidden="true">&#8599;</span></a>
+          </div>
+          <p class="hero-credit">
+            Conceived and led by physicist <strong>Victor de Amorim d&rsquo;&Aacute;vila</strong>,<br />
+            with collaboration from oceanographer <strong>Uggo Pinho</strong>.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-label="Abstract illustration of heat moving through the expansion engine">
+          <div class="temperature-label label-hot">HOT SOURCE <strong>&lt;100&deg;C</strong></div>
+          <div class="temperature-label label-cold">COLD SOURCE <strong>AMBIENT</strong></div>
+          <svg viewBox="0 0 640 640" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">Thermal flow concept</title>
+            <desc id="diagram-desc">Hot and cold thermal sources drive a central mechanical cycle.</desc>
+            <defs>
+              <linearGradient id="thermal" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#e7773d" />
+                <stop offset="0.52" stop-color="#d9a559" />
+                <stop offset="1" stop-color="#65b9d5" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="5" result="blur" />
+                <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+            </defs>
+            <circle class="orbit orbit-one" cx="320" cy="320" r="245" />
+            <circle class="orbit orbit-two" cx="320" cy="320" r="188" />
+            <path class="flow flow-hot" d="M118 215 C186 112 320 94 426 144" />
+            <path class="flow flow-cold" d="M522 421 C454 528 315 550 205 493" />
+            <g class="engine-core">
+              <circle cx="320" cy="320" r="116" />
+              <circle class="core-ring" cx="320" cy="320" r="83" />
+              <path class="piston" d="M320 238 V310 L370 351" />
+              <circle class="core-pin" cx="320" cy="320" r="14" />
+            </g>
+            <g class="source source-hot">
+              <circle cx="116" cy="212" r="34" />
+              <path d="M100 212h32M106 201l20 22M126 201l-20 22" />
+            </g>
+            <g class="source source-cold">
+              <circle cx="524" cy="424" r="34" />
+              <path d="M508 424h32M514 413l20 22M534 413l-20 22" />
+            </g>
+            <path class="output-line" d="M404 243 C476 205 506 161 539 103" />
+            <g class="output" transform="translate(540 101)">
+              <circle r="29" />
+              <path d="M-10 0h20M0-10v20" />
+            </g>
+            <text x="320" y="468" text-anchor="middle">THERMAL DIFFERENCE / MECHANICAL CYCLE</text>
+          </svg>
+          <div class="visual-caption"><span>01</span> Conceptual system view</div>
+        </div>
+      </section>
+
+      <section id="concept" class="section problem-section">
+        <div class="section-number">01 / THE OPPORTUNITY</div>
+        <div class="section-heading">
+          <p class="eyebrow">The challenge</p>
+          <h2>Clean energy should not stop when the sun goes down.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            Renewable energy is abundant, but often intermittent. Conventional storage can be
+            expensive, resource-intensive, and difficult to scale for every community.
+          </p>
+          <p>
+            The Expansion Engine explores a different path: storing energy as heat in water, then
+            using a controlled temperature difference to produce motion when power is needed.
+          </p>
+        </div>
+      </section>
+
+      <section id="process" class="section process-section">
+        <div class="section-number">02 / THE CONCEPT</div>
+        <div class="section-heading wide">
+          <p class="eyebrow">How it works</p>
+          <h2>A cycle built around <span>heat, water,</span> and motion.</h2>
+        </div>
+        <ol class="process-grid">
+          <li>
+            <span class="step-number">01</span>
+            <div class="step-icon heat-icon" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Collect</h3>
+            <p>Low-temperature heat may be collected from solar, geothermal, or marine sources.</p>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <div class="step-icon store-icon" aria-hidden="true"><i></i></div>
+            <h3>Store</h3>
+            <p>Insulated water reservoirs hold thermal energy using a familiar, widely available medium.</p>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <div class="step-icon exchange-icon" aria-hidden="true"><i></i><i></i></div>
+            <h3>Exchange</h3>
+            <p>Alternating thermal conditions drive controlled expansion and contraction inside the engine.</p>
+          </li>
+          <li>
+            <span class="step-number">04</span>
+            <div class="step-icon motion-icon" aria-hidden="true"><i></i></div>
+            <h3>Generate</h3>
+            <p>The resulting mechanical motion can be coupled to a generator to produce electricity.</p>
+          </li>
+        </ol>
+        <p class="process-note">Conceptual overview. Detailed engineering remains proprietary.</p>
+      </section>
+
+      <section class="section water-section">
+        <div class="water-stat" aria-hidden="true">
+          <span class="water-drop"></span>
+          <strong>H<sub>2</sub>O</strong>
+        </div>
+        <div class="water-copy">
+          <p class="eyebrow">Why water?</p>
+          <h2>A thermal battery made from an everyday material.</h2>
+          <p>
+            Water has a high specific heat capacity: it can absorb and retain substantial thermal
+            energy. That makes it an intriguing medium for low-temperature storage systems designed
+            around durability, accessibility, and scale.
+          </p>
+        </div>
+      </section>
+
+      <section id="applications" class="section applications-section">
+        <div class="section-number">03 / POSSIBILITIES</div>
+        <div class="section-heading wide">
+          <p class="eyebrow">Potential applications</p>
+          <h2>Designed to explore energy that is already around us.</h2>
+        </div>
+        <div class="application-list">
+          <article><span>01</span><h3>Solar thermal</h3><p>Store heat collected during the day for use beyond daylight hours.</p></article>
+          <article><span>02</span><h3>Geothermal</h3><p>Explore naturally occurring low-grade heat as a continuous energy source.</p></article>
+          <article><span>03</span><h3>Ocean thermal</h3><p>Investigate the temperature difference between surface and deeper waters.</p></article>
+          <article><span>04</span><h3>Remote systems</h3><p>Support research into decentralized and off-grid energy generation.</p></article>
+        </div>
+      </section>
+
+      <section class="section status-section">
+        <div>
+          <p class="eyebrow">Development status</p>
+          <h2>Research in motion.</h2>
+        </div>
+        <div class="status-copy">
+          <p>
+            The Expansion Engine is an independent research and engineering project. Prototype
+            development, testing, and refinement are ongoing.
+          </p>
+          <div class="status-line"><span></span> Active development</div>
+        </div>
+      </section>
+
+      <section id="team" class="section team-section">
+        <div class="section-number">04 / THE PEOPLE</div>
+        <div class="section-heading wide">
+          <p class="eyebrow">Meet the team</p>
+          <h2>Built from curiosity, persistence, and two complementary perspectives.</h2>
+        </div>
+        <div class="team-grid">
+          <article class="person person-lead">
+            <div class="person-monogram" aria-hidden="true">VD</div>
+            <div class="person-role">Inventor &amp; technical lead</div>
+            <h3>Victor de Amorim d&rsquo;&Aacute;vila</h3>
+            <p>
+              Physicist and the driving mind behind the Expansion Engine. Victor conceived the core
+              thermodynamic and mechanical approach and leads its continuing development.
+            </p>
+          </article>
+          <article class="person">
+            <div class="person-monogram" aria-hidden="true">UP</div>
+            <div class="person-role">Collaborator</div>
+            <h3>Uggo Pinho</h3>
+            <p>
+              Oceanographer supporting the project through research, collaboration, communication,
+              and the effort to connect the engine with people who can help it grow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <p class="eyebrow">Open to collaboration</p>
+        <h2>Help move the idea forward.</h2>
+        <p>
+          We welcome conversations with engineers, researchers, energy specialists, and organizations
+          interested in low-temperature thermal power.
+        </p>
+        <a class="button button-light" href="https://github.com/uferreira/expansion-engine">Connect on GitHub</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark"></span><span>Expansion Engine</span></a>
+      <p>Independent research in low-temperature thermal power.</p>
+      <p>&copy; <span id="year"></span> Victor de Amorim d&rsquo;&Aacute;vila &amp; Uggo Pinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
